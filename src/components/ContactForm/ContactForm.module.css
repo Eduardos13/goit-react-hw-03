@@ -1,0 +1,55 @@
+.wrapper {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.lable {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lable span {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.input {
+  width: 280px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 5px 20px;
+  color: rgb(30, 29, 29);
+  border: 1px solid lightgray;
+}
+
+.input:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 black;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(8, 8, 180);
+}
