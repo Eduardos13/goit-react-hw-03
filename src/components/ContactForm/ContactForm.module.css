@@ -39,7 +39,7 @@
   box-shadow: 0 0 2px 0 black;
 }
 
-button {
+.addContact {
   width: 150px;
   height: 50px;
   padding: 10px 20px;
@@ -50,6 +50,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.addContact:hover {
   background-color: rgb(8, 8, 180);
 }

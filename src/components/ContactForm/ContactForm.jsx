@@ -32,7 +32,9 @@ const ContactForm = () => {
               placeholder="Contact number"
             ></Field>
           </label>
-          <button type="submit">Add contact</button>
+          <button className={s.addContact} type="submit">
+            Add contact
+          </button>
         </Form>
       </Formik>
     </div>
