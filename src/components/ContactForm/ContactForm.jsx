@@ -2,6 +2,7 @@ import React from "react";
 import s from "./ContactForm.module.css";
 import { Formik, Form, Field } from "formik";
 import { FiUserPlus } from "react-icons/fi";
+import { nanoid } from "nanoid";
 
 const ContactForm = ({ onAdd }) => {
   return (
@@ -14,7 +15,7 @@ const ContactForm = ({ onAdd }) => {
         onSubmit={(data, action) => {
           action.resetForm();
           onAdd({
-            id: Date.now(),
+            id: nanoid(),
             name: data.name,
             number: data.number,
           });
