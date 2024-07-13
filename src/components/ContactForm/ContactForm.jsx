@@ -3,7 +3,7 @@ import s from "./ContactForm.module.css";
 import { Formik, Form, Field } from "formik";
 import { FiUserPlus } from "react-icons/fi";
 
-const ContactForm = () => {
+const ContactForm = ({ onAdd }) => {
   return (
     <div className={s.wrapper}>
       <Formik
@@ -13,7 +13,11 @@ const ContactForm = () => {
         }}
         onSubmit={(data, action) => {
           action.resetForm();
-          console.log(data);
+          onAdd({
+            id: Date.now(),
+            name: data.name,
+            number: data.number,
+          });
         }}
       >
         <Form className={s.form}>

@@ -2,12 +2,16 @@ import React from "react";
 import Contact from "../Contact/Contact";
 import s from "./ContactList.module.css";
 
-const ContactList = () => {
+const ContactList = ({ contacts }) => {
   return (
-    <div>
-      <div className={s.wrapper}>
-        <Contact />
-      </div>
+    <div className={s.wrapper}>
+      <ul className={s.contactList}>
+        {contacts.map((contact) => (
+          <li key={contacts.id}>
+            <Contact data={contact} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { TiUser } from "react-icons/ti";
 import { MdLocalPhone } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 
-const Contact = () => {
+const Contact = ({ data }) => {
   return (
     <div>
       <div className={s.wrapper}>
@@ -12,11 +12,11 @@ const Contact = () => {
           <div className={s.infoWrapper}>
             <p className={s.contactInfo}>
               <TiUser />
-              User name
+              {data.name}
             </p>
             <p className={s.contactInfo}>
               <MdLocalPhone />
-              User number
+              {data.number}
             </p>
           </div>
           <button className={s.deleteBtn}>
