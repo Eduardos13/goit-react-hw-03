@@ -4,7 +4,7 @@ import { TiUser } from "react-icons/ti";
 import { MdLocalPhone } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 
-const Contact = ({ data }) => {
+const Contact = ({ data, onDelete }) => {
   return (
     <div>
       <div className={s.wrapper}>
@@ -19,7 +19,7 @@ const Contact = ({ data }) => {
               {data.number}
             </p>
           </div>
-          <button className={s.deleteBtn}>
+          <button className={s.deleteBtn} onClick={() => onDelete(data.id)}>
             <RxCross1 className={s.deleteIcon} />
           </button>
         </div>
