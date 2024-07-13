@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./ContactForm.module.css";
 import { Formik, Form, Field } from "formik";
+import { FiUserPlus } from "react-icons/fi";
 
 const ContactForm = () => {
   return (
@@ -33,6 +34,7 @@ const ContactForm = () => {
             ></Field>
           </label>
           <button className={s.addContact} type="submit">
+            <FiUserPlus />
             Add contact
           </button>
         </Form>

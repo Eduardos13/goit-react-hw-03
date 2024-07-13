@@ -5,9 +5,9 @@ const SearchBox = () => {
   return (
     <div>
       <div className={s.wrapper}>
-        <label>
+        <label className={s.lable}>
           <span>Search</span>
-          <input type="text" />
+          <input className={s.input} type="text" />
         </label>
       </div>
     </div>

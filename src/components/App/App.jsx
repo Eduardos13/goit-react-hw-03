@@ -8,10 +8,12 @@ const App = () => {
   return (
     <div>
       <div className={s.wrapper}>
-        <h1 className={s.mainTitle}>Phonebook</h1>
-        <ContactForm />
-        <SearchBox />
-        <ContactList />
+        <div className={s.infoWrap}>
+          <h1 className={s.mainTitle}>Phonebook</h1>
+          <ContactForm />
+          <SearchBox />
+          <ContactList />
+        </div>
       </div>
     </div>
   );
